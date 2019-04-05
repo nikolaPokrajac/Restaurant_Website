@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  background-color: $color-footer;
+  padding: 5rem 0;
+  font-size: 1.8rem;
+  color: $color-white;
+}

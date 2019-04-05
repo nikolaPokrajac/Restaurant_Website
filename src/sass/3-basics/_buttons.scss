@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all 650ms;
+}
+
+.main-btn {
+  font-size: 1.5rem;
+  border: 2px solid $color-main;
+  padding: 2rem 2.5rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  position: relative;
+  margin-top: 3rem;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
+
+.btn-info {
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: $color-main;
+  border-bottom: 2px solid $color-main;
+  margin: 2rem 0 4rem 0;
+
+  &:hover {
+    background-color: $color-main;
+    color: $color-white;
+  }
+}
+
+.btn-submit {
+  background-color: $color-main;
+  color: $color-white;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-main-dark;
+  }
+}

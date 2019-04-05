@@ -1,0 +1,23 @@
+.contact {
+  &__form {
+    width: 100%;
+    min-width: 9rem;
+    margin-top: 5rem;
+  }
+
+  &__input,
+  &__text-area {
+    width: 100%;
+    max-width: 100%;
+    margin: 5px 0;
+    padding: 5px 1rem;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    border: 1px solid $color-main;
+    color: $color-gray-2;
+  }
+
+  &__text-area {
+    height: 10rem;
+  }
+}
