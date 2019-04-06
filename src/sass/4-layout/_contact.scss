@@ -1,4 +1,10 @@
 .contact {
+  &__form-container {
+    @include respond(tab-port) {
+      margin-left: 5rem;
+    }
+  }
+
   &__form {
     width: 100%;
     min-width: 9rem;
@@ -19,5 +25,10 @@
 
   &__text-area {
     height: 10rem;
+
+
+  @include respond(tab-port) {
+    height: 15rem;
+  }
   }
 }

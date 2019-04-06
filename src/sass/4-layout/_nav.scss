@@ -4,6 +4,14 @@
   line-height: 6rem;
   position: relative;
 
+  &__nav {
+    @include respond(tab-port) {
+      display: flex;
+      padding: 2rem 10rem 0;
+      justify-content: space-between;
+    }
+  }
+
   &__overlay {
     background-color: rgba(0, 0, 0, 0.95);
     position: fixed;
@@ -15,6 +23,13 @@
     transform: scale(0);
     transition: opacity 650ms;
     opacity: 0;
+
+    @include respond(tab-port) {
+      position: initial;
+      background: none;
+      opacity: initial;
+      transform: initial;
+    }
   }
 
   &__overlay.menu-open {
@@ -28,6 +43,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include respond(tab-port) {
+      flex-direction: row;
+      list-style: none;
+      margin-top: 2px;
+    }
   }
 
   &__item {
@@ -39,9 +60,28 @@
     font-size: 2rem;
     transition: all 650ms;
 
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      margin-right: -1px;
+      padding: 0 2rem;
+    }
+
     &:hover,
     &.active:hover {
       color: $color-main;
+    }
+  }
+
+  &__logo {
+    display: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    border-bottom: 1px solid $color-white;
+
+    @include respond(tab-port) {
+      display: block;
     }
   }
 
@@ -54,6 +94,10 @@
     z-index: 999;
     border-radius: 3px;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__bar,
