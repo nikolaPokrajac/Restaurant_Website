@@ -1,6 +1,6 @@
 # Restaurant_Website
 
-Restaurant Website created useing HTML, SCSS, Flexbox, CSS Grid and JS.
+Restaurant Website created using HTML, SCSS, Flexbox, CSS Grid and JS.
 
 Check out [Live Demo](https://nikolapokrajac.github.io/Restaurant_Website/)
 
